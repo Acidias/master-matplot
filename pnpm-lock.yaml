@@ -14,6 +14,9 @@ dependencies:
   nextra-theme-docs:
     specifier: latest
     version: 2.2.14(next@13.0.6)(nextra@2.2.14)(react-dom@18.2.0)(react@18.2.0)
+  pyodide:
+    specifier: ^0.27.2
+    version: 0.27.2
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1720,6 +1723,16 @@ packages:
     resolution: {integrity: sha512-b/YwNhb8lk1Zz2+bXXpS/LK9OisiZZ1SNsSLxN1x2OXVEhW2Ckr/7mWE5vrC1ZTiJlD9g19jWszTmJsB+oEpFQ==}
     dev: false
 
+  /pyodide@0.27.2:
+    resolution: {integrity: sha512-sfA2kiUuQVRpWI4BYnU3sX5PaTTt/xrcVEmRzRcId8DzZXGGtPgCBC0gCqjUTUYSa8ofPaSjXmzESc86yvvCHg==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      ws: 8.18.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    dev: false
+
   /react-dom@18.2.0(react@18.2.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
@@ -2161,6 +2174,19 @@ packages:
     hasBin: true
     dependencies:
       isexe: 2.0.0
+    dev: false
+
+  /ws@8.18.0:
+    resolution: {integrity: sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
     dev: false
 
   /yallist@2.1.2:
