@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
+    "@codemirror/lang-python": "^6.1.7",
+    "@uiw/react-codemirror": "^4.23.8",
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",

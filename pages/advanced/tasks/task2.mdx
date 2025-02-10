@@ -4,34 +4,25 @@ title: "Simple Matplotlib Task"
 
 # 📊 Simple Matplotlib Test
 
-In this task, modify the Python code below to create your own **customized line plot**.
+Modify the Python code below and click **Run Code** to visualize the plot.
 
 ## **📝 Task Instructions**
-1. Change the `x` and `y` values to experiment with different data.
-2. Modify the **title** and **axis labels**.
+1. Modify the `x` and `y` values.
+2. Change the **title** and **axis labels**.
 3. Try different **line styles** (`'-'`, `'--'`, `':'`, etc.).
-4. Click **Run Code** to visualize the output.
+4. Click **Run Code** to generate the plot.
 
 ---
 
 import PythonRunner from "../../../components/PythonRunner";
 
 <PythonRunner initialCode={`
-import matplotlib.pyplot as plt
-
-# Sample data
 x = [0, 1, 2, 3, 4, 5]
-y = [0, 1, 4, 9, 16, 25]
+y = [i**2 for i in x]
 
-# Create the plot
-plt.plot(x, y, marker='o', linestyle='-', color='b', label="Quadratic Growth")
-
-# Customize the plot
-plt.xlabel("X Values")
-plt.ylabel("Y Values (Squared)")
-plt.title("Simple Line Plot with Matplotlib")
-plt.legend()
-
-# Display the plot
-plt.show()
+ax.plot(x, y, marker='o', linestyle='-', color='b', label="Quadratic Growth")
+ax.set_xlabel("X Values")
+ax.set_ylabel("Y Values (Squared)")
+ax.set_title("Simple Line Plot with Matplotlib")
+ax.legend()
 `} />
