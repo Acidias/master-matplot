@@ -4,8 +4,6 @@
    
      "getting-started": "Getting Started",
      "basics": "Basics",
-     "another": "Another Page",
-     "advanced": "Advanced (A Folder)",
      "about": {
        "title": "About",
        "type": "page"
