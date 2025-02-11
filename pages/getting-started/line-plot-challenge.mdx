@@ -1,0 +1,44 @@
+---
+title: "Line Plot Challenge"
+---
+
+# Line Plot Challenge
+
+In this challenge, you will create a simple line plot that connects a series of points.
+
+**Your tasks:**
+1. Define two lists, `x` and `y`, representing your data points.
+2. Use `ax.plot()` to draw a line through the points.
+3. Add a title to your plot using `ax.set_title()`.
+
+Try to solve the challenge by editing the code below, then click **Run Code**.
+
+import PythonRunner from "../../components/PythonRunner";
+
+<PythonRunner initialCode={`import matplotlib.pyplot as plt
+# Write your code below:
+`} />
+
+import ShowSolution from "../../components/ShowSolution"
+
+<ShowSolution
+  solution={`
+**Solution:**
+
+\`\`\`python
+import matplotlib.pyplot as plt
+
+# Define the data points
+x=[0,1,2,3,4,5]
+y = [0, 1, 4, 9, 16, 25]
+
+# Plot the line with markers
+ax.plot(x, y, marker='o', linestyle='-', color='b')
+
+# Title
+ax.set_title("Simple Line Plot")
+\`\`\`
+`}
+/>
+
+

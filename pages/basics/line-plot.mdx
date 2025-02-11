@@ -1,0 +1,29 @@
+---
+title: "Basic Line Plot"
+---
+
+# Basic Line Plot
+
+In this task, you will create a simple line plot that connects a series of points. This exercise is designed to introduce you to plotting data with Matplotlib.
+
+**Instructions:**
+1. Define two lists, `x` and `y`, that represent your data points.
+2. Use `ax.plot()` to draw a line through the points.
+3. Add a title to your plot with `ax.set_title()`.
+
+Modify the code below and click **Run Code**.
+
+import PythonRunner from "../../components/PythonRunner";
+
+<PythonRunner initialCode={`import matplotlib.pyplot as plt
+
+# Define the data points
+x = [0, 1, 2, 3, 4, 5]
+y = [0, 1, 4, 9, 16, 25]
+
+# Plot the line with markers at each point
+ax.plot(x, y, marker='o', linestyle='-', color='b')
+
+# Add a title to the plot
+ax.set_title("Simple Line Plot")
+`} />

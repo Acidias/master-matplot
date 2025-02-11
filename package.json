@@ -23,9 +23,12 @@
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
+    "prism": "^4.1.2",
     "pyodide": "^0.27.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.3",
+    "react-syntax-highlighter": "^15.6.1"
   },
   "devDependencies": {
     "@types/node": "18.11.10",

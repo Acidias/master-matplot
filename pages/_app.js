@@ -1,6 +1,7 @@
 // pages/_app.js
 // import '@nextra/theme-docs/style.css'
 import Head from 'next/head'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (

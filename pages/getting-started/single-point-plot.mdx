@@ -1,0 +1,29 @@
+---
+title: "Single Point Plot"
+---
+
+# Single Point Plot
+
+In this task, you will plot a single data point. This exercise is meant to show that even one point can be plotted, which is a great starting point when you’re new to Matplotlib.
+
+**Instructions:**
+1. Define a single coordinate for `x` and `y`.
+2. Use `ax.plot()` with a marker (and no connecting line) to display the point.
+3. Add a title using `ax.set_title()`.
+
+Modify the code below and click **Run Code**.
+
+import PythonRunner from "../../components/PythonRunner";
+
+<PythonRunner initialCode={`import matplotlib.pyplot as plt
+
+# Define a single data point
+x = [2]
+y = [3]
+
+# Plot the single point using a circle marker
+ax.plot(x, y, marker='o', linestyle='None', color='r')
+
+# Add a title to the plot
+ax.set_title("Single Point Plot")
+`} />
