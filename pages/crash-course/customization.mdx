@@ -1,0 +1,42 @@
+---
+title: "Matplotlib Crash Course: Plot Customization"
+---
+
+# Plot Customization
+
+Once you’re comfortable with creating basic plots, you can start customizing them to improve readability and presentation. In this example, you’ll see how to add a title, axis labels, legends, and grid lines to a plot with multiple data series.
+
+import PythonRunner from "../../components/PythonRunner";
+
+<PythonRunner initialCode={`import matplotlib.pyplot as plt
+
+# Example: Customized Plot with Two Data Series
+
+# Data for two series
+x = [0, 1, 2, 3, 4, 5]
+y1 = [0, 1, 4, 9, 16, 25]  # Quadratic growth
+y2 = [0, 1, 2, 3, 4, 5]    # Linear growth
+
+# Plot the first data series with a solid line and circle markers
+ax.plot(x, y1, marker='o', linestyle='-', color='blue', label="Quadratic")
+
+# Plot the second data series with a dashed line and square markers
+ax.plot(x, y2, marker='s', linestyle='--', color='red', label="Linear")
+
+# Add title and axis labels
+ax.set_title("Customized Plot Example")
+ax.set_xlabel("X Axis Label")
+ax.set_ylabel("Y Axis Label")
+
+# Display legend and grid lines for better readability
+ax.legend()
+ax.grid(True)
+`} height={`500px`}/>
+
+---
+
+# Next Steps
+
+Now that you’ve seen a variety of basic plot types and how to customize them, try experimenting on your own. Change the data, adjust the styling, or add more elements like annotations to further explore Matplotlib’s capabilities.
+
+Happy plotting!

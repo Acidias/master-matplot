@@ -1,17 +1,19 @@
 {
-  "index": "Introduction",
-  "getting-started": "Getting Started",
-  "basics": "Basics",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://x.com/Misi1121",
-    "newWindow": true
-  }
-}
+     "index": "Introduction",
+     "crash-course": "Crash Course",
+   
+     "getting-started": "Getting Started",
+     "basics": "Basics",
+     "another": "Another Page",
+     "advanced": "Advanced (A Folder)",
+     "about": {
+       "title": "About",
+       "type": "page"
+     },
+     "contact": {
+       "title": "Contact ↗",
+       "type": "page",
+       "href": "https://x.com/Misi1121",
+       "newWindow": true
+     }
+   }

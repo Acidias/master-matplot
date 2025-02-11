@@ -9,7 +9,7 @@ const CodeMirror = dynamic(() => import("@uiw/react-codemirror"), {
 });
 import { python } from "@codemirror/lang-python";
 
-export default function PythonRunner({ initialCode }) {
+export default function PythonRunner({ initialCode, height = "200px" }) {
   const [code, setCode] = useState(initialCode);
   const [output, setOutput] = useState("Loading Python...");
   const [pyodideLoaded, setPyodideLoaded] = useState(false);
@@ -83,7 +83,7 @@ print(encoded)
       {/* CodeMirror for Python syntax highlighting */}
       <CodeMirror
         value={code}
-        height="200px"
+        height={height}
         extensions={[python()]}
         theme="light"
         onChange={(value) => setCode(value)}

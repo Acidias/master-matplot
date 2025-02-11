@@ -1,0 +1,106 @@
+---
+title: "Matplotlib Crash Course: Plot Examples"
+---
+
+# Plot Examples
+
+## Overview of Common Parameters and Functions
+
+Before diving into the interactive examples below, here’s a quick explanation of some common functions, parameters, and properties you will see:
+
+- **`ax.plot(x, y, ...)`**: Used for creating line plots.
+  - **`x` and `y`**: Lists of numerical values representing the data points.
+- **`marker`**: Specifies the symbol used to mark each data point.  Full list available at <a href="https://matplotlib.org/stable/api/markers_api.html#module-matplotlib.markers" target="_blank" style={{ color: "blue", textDecoration: "none" }}>Matplotlib Markers</a>.
+  - **`linestyle`**: Defines the style of the line (e.g., `'-'` for a solid line, `'--'` for a dashed line, `':'` for a dotted line).
+  - **`color`**: Sets the color of the line and markers (e.g., `'blue'`, `'red'`).
+
+- **`ax.scatter(x, y, ...)`**: Creates a scatter plot.
+  - **`s`**: Determines the size of the markers.
+  - Other parameters like `color` work similarly as in `ax.plot()`.
+
+- **`ax.bar(categories, values, ...)`**: Used to create bar charts.
+  - **`categories`**: A list of category names (typically strings).
+  - **`values`**: A list of numerical values corresponding to each category.
+  - **`color`**: Sets the fill color of the bars.
+
+- **`ax.hist(data, bins, ...)`**: Creates a histogram.
+  - **`data`**: A list of numerical values.
+  - **`bins`**: An integer or sequence specifying the number of bins (intervals) for the histogram.
+  - **`edgecolor`**: Defines the color of the bin edges.
+
+- **`ax.set_title("Title")`**: Adds a title to the plot.
+- **`ax.set_xlabel("X Axis")` and `ax.set_ylabel("Y Axis")`**: Set the labels for the x-axis and y-axis, respectively.
+- **`ax.legend()`**: Displays a legend on the plot (if you provide labels for the plotted data).
+
+Each of these functions and parameters gives you the flexibility to customize your plots to improve readability and presentation. Feel free to experiment by modifying these parameters and observing how the plot changes.
+
+---
+
+## Line Plot
+
+A line plot connects a series of data points with a continuous line. You can adjust the data, markers, and line styles as desired.
+
+import PythonRunner from "../../components/PythonRunner";
+
+<PythonRunner initialCode={`import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+
+# Example: Line Plot
+x = [0, 1, 2, 3, 4, 5]
+y = [0, 1, 4, 9, 16, 25]
+
+ax.plot(x, y, marker='o', linestyle='-', color='blue')
+ax.set_title("Line Plot Example")
+`} />
+
+---
+
+## Scatter Plot
+
+A scatter plot displays individual data points without connecting lines. This is useful for visualizing the relationship between two variables.
+
+<PythonRunner initialCode={`import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+
+# Example: Scatter Plot
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+ax.scatter(x, y, color='red', s=100)  # 's' sets the marker size
+ax.set_title("Scatter Plot Example")
+`} />
+
+---
+
+## Bar Chart
+
+Bar charts are used to compare values across different categories. Customize the categories and values to see how your data looks.
+
+<PythonRunner initialCode={`import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+
+# Example: Bar Chart
+categories = ["A", "B", "C", "D"]
+values = [20, 35, 30, 35]
+
+ax.bar(categories, values, color='green')
+ax.set_title("Bar Chart Example")
+`} />
+
+---
+
+## Histogram
+
+Histograms are useful for displaying the distribution of data. In this example, random data is generated to simulate a normal distribution.
+
+<PythonRunner initialCode={`import matplotlib.pyplot as plt
+import random
+
+fig, ax = plt.subplots()
+
+
+# Example: Histogram
+data = [random.gauss(0, 1) for _ in range(100)]
+ax.hist(data, bins=10, color='purple', edgecolor='black')
+ax.set_title("Histogram Example")
+`} />
